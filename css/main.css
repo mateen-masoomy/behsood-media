@@ -1,0 +1,183 @@
+html body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Quicksand;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+  font-family: Montserrat;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+p {
+  font-family: Quicksand;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.divider {
+  width: 85%;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+nav {
+  display: grid;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  grid-template-columns: 1fr 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ececec;
+}
+
+.title,
+.menu {
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.title:hover,
+.menu:hover {
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  height: 99vh;
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+header:after {
+  display: block;
+  height: 200%;
+  width: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  content: '';
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  border-radius: 100%;
+}
+
+header .headline-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  backdrop-filter: blur(3px);
+  transition: 0.4s;
+}
+
+.hide .headline-container {
+  opacity: 0;
+}
+
+header h1:first-child {
+  font-size: 2.5em;
+  color: rgb(235, 138, 59);
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  width: 80%;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3em;
+  color: #fafafa;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px;
+}
+
+header .divider {
+  border-color: #000;
+  border-width: 1px;
+}
+
+section {
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #efefef;
+  padding: 80px 40px;
+}
+
+.videos {
+  height: 100%;
+}
+
+.parallax {
+  height: 100vh;
+  position: relative;
+  perspective: 3px;
+  overflow-x: hidden;
+}
+
+.parallax .image {
+  height: 2268px;
+  width: 4032px;
+  position: absolute;
+  top: -50%;
+  left: -70%;
+  background-image: url(../assets/dam-main.jpg);
+  transform: translateZ(-3px) scale(1.2);
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #00000000;
+  transform: translateZ(0px);
+}
+
+.content-image {
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 801px) {
+  .introduction p,
+  .divider {
+    max-width: 800px;
+  }
+}
