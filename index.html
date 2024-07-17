@@ -1,0 +1,74 @@
+<html>
+
+    <head>
+        <title>BEHSOOD MEDIA</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./css/fonts.css" />
+        <link rel="stylesheet" href="./css/milligram/milligram.min.css" />
+        <link rel="stylesheet" href="./css/icons.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+
+    <body>
+        <nav>
+            <span class="title">BEHSOOD MEDIA | رسانه بهسود</span>
+            <span class="menu material-symbols-outlined">menu</span>
+        </nav>
+
+        <div class="parallax">
+            <div class="image"></div>
+            <div class="content">
+                <header>
+                    <div class="headline-container">
+                        <h1 class="sub-headline">پروژه آب بند همبستگی طبیعت بهسود</h1>
+                        <h1 class="headline">
+                            Behsood Nature-Solidarity Water Dam Project
+                        </h1>
+                    </div>
+                </header>
+
+                <section class="introduction">
+                    <p>پروژه آب بند همبستگی طبیعت بهسود با تلاشهای خستگی ناپذیر آقای دوکتور نثار و تیم همکار ایشان و به
+                        حمایت
+                        سخاوتمندانه دوستان روی دست گرفته شده و امیدوار هستیم که دوستان خیر اندیش تا تکمیل شدن این پروژه
+                        بنیادی و
+                        ملی از هیچگونه کمک و همکاری دریغ ننمایند</p>
+                    <div class="divider"></div>
+                    <p>​The Behsood Nature-Solidarity Dam project was undertaken thanks to the tireless efforts of Dr.
+                        Nisar
+                        and
+                        his team, with the generous support of friends and donors. ​We hope that all our friends, donors
+                        and
+                        well-wishers will spare no help and cooperation until the completion of this fundamental
+                        national
+                        project.</p>
+                    <img class="content-image" src="assets/ribbon.png" />
+                    <div class="divider"></div>
+                    <p>
+                        ​ بازتاب پروژه آب بند همبستگی طبیعت بهسود در خبر های جهانی افغانستان انترنشنال
+                    </p>
+                </section>
+
+                <section class="videos">
+                    <p>This is a test thing</p>
+                </section>
+            </div>
+        </div>
+
+        <script>
+            function changeCss() {
+                if (this.scrollTop > 400) {
+                    document.querySelector("header").classList.add('hide');
+                } else {
+                    document.querySelector("header").classList.remove('hide');
+                }
+            }
+
+            document.querySelector('.parallax').addEventListener("scroll", changeCss, false);
+        </script>
+    </body>
+
+</html>
